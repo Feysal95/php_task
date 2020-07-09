@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Лента новостей{% endblock %}
+
+{% block body %}
+    <div class="news-feed__wrapper js-news-feed">
+        <div id="js_news_feed_banner" class="news-feed">
+            <div class="news-feed__header">Лента новостей</div>
+            <div class="js-news-feed-list">
+                {% if articles|length %}
+                    {% for article in articles %}
+                        <div class="news-feed__item">
+                            <a class="news-feed__item__title" href="{{ path('single_article', {'article' : article.id}) }}">{{ article.title }}</a>
+                            <span class="news-feed__item__date">
+                                    <span class="news-feed__item__date-text">{{ article.created|date }}</span>
+                            </span>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="news-feed__item">
+                        Новости не найдены
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

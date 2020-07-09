@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block body %}
+    <div class="article  js-rbcslider-article" >
+        <div class="l-row">
+            <div class="l-col-center">
+                <div class="l-col-center__inner">
+                    <div class="article__fix-width">
+                        <div class="l-row article__header js-article-header">
+                            <div class="main-link"><a href="/">На главную</a></div>
+                            <div class="article__header__title">
+                                <span class="js-slide-title">{{ article.title }}</span>
+                            </div>
+                        </div>
+                        <div class="article__content">
+                            <div class="article__text" itemprop="articleBody">
+                                <div class="article__main-image">
+                                    {% if article.image %}
+                                    <div class="article__main-image__link">
+                                        <img src="/uploads/{{ article.image }}" class="article__main-image__image js-rbcslider-image" alt="">
+                                    </div>
+                                    {% endif %}
+                                    <div class="article__main-image__title">
+                                        <span class="article__main-image__author">{{ article.created|date }}</span>
+                                    </div>
+                                </div>
+                                {{ article.content }} ...
+                                </p><div class="article__clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,305 @@
+body{
+    background: #f7f7f7;
+}
+.news-feed {
+    width: 700px;
+    border: 1px solid #ddd;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.news-feed__wrapper {
+    height: 100%
+}
+.news-feed__header {
+    padding: 28px 20px 0;
+    margin-bottom: -2px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 24px
+}
+
+.news-feed__toggle {
+    margin: 16px 20px -1px
+}
+
+.news-feed__toggle__inner {
+    text-align: center;
+    font-size: 0;
+    border-radius: 3px;
+    overflow: hidden
+}
+
+.news-feed__toggle__link {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding: 8px 0;
+    font-family: GraphikCy-Semibold,'Helvetica CY',Arial,sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    border: 1px solid #ddd;
+    border-radius: 3px 0 0 3px;
+    cursor: pointer
+}
+
+.news-feed__toggle__link:last-child {
+    margin-left: -1px;
+    border-radius: 0 3px 3px 0
+}
+
+.news-feed__toggle__link.active {
+    background: #eee;
+    cursor: default
+}
+
+.news-feed__item {
+    display: block;
+    padding: 18px 20px 12px;
+    font-size: 18px;
+    line-height: 24px;
+    border-bottom: 1px solid #ddd
+}
+
+.news-feed__item__title {
+    display: block
+}
+
+.news-feed__item__title:hover{
+    text-decoration: none;
+}
+
+.news-feed__item__change_grow {
+    color: #1b8
+}
+
+.news-feed__item__change_fall {
+    color: #f44
+}
+
+.news-feed__item__change_zero {
+    color: #999
+}
+
+.news-feed__item__date {
+    display: block;
+    margin-top: 5px;
+    font-size: 0;
+    white-space: nowrap
+}
+
+.news-feed__item__date-text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #999;
+    white-space: normal
+}
+
+.news-feed__item_bold {
+    font-family: GraphikCy-Semibold,'Helvetica CY',Arial,sans-serif
+}
+
+.news-feed_in-main-bold .news-feed__item_in-main {
+    font-family: GraphikCy-Semibold,'Helvetica CY',Arial,sans-serif
+}
+
+.article__right-banners {
+    width: 240px
+}
+
+.article__fix-width {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+.article__content {
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.article__content:after,.article__content:before {
+    content: " ";
+    display: table
+}
+
+.article__content:after {
+    clear: both
+}
+
+.article__subheader {
+    color: #222;
+    margin: 30px 0 20px;
+    font-family: GraphikCy-Semibold,'Helvetica CY',Arial,sans-serif;
+    font-size: 24px;
+    line-height: 26px
+}
+
+.article__subheader * {
+    font-family: GraphikCy-Semibold,'Helvetica CY',Arial,sans-serif!important;
+    font-size: 24px!important;
+    line-height: 26px!important
+}
+
+.article__text {
+    font-size: 18px;
+    line-height: 26px;
+    font-family: Kazimir,'Helvetica CY',Arial,sans-serif;
+    overflow: hidden;
+    color: #333
+}
+
+.article__text p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 16px
+}
+
+.article__text b,.article__text strong {
+    font-family: Kazimir-Semibold,'Helvetica CY',Arial,sans-serif;
+    font-weight: 400
+}
+
+.article__text em,.article__text i {
+    font-style: italic
+}
+
+.article__text em b,.article__text em strong,.article__text i b,.article__text i strong {
+    font-family: Kazimir-Semibold-Italic,'Helvetica CY',Arial,sans-serif;
+    font-weight: 400
+}
+
+.article__text ul {
+    margin: 0 0 14px 33px
+}
+
+.article__text ul li {
+    margin: 0 0 10px 0;
+    list-style: disc
+}
+
+.article__text ol {
+    margin: 0 0 14px 33px
+}
+
+.article__text ol li {
+    margin: 0 0 10px 0;
+    list-style: decimal
+}
+
+.article__text h2,.article__text h3,.article__text h4,.article__text h5,.article__text h6 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px
+}
+
+.article__text a {
+    background: 0 0;
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,#16b67f 100%);
+    background-repeat: repeat-x;
+    background-position: 0 90%;
+    background-size: 1px 1px;
+    color: #222;
+    text-decoration: none
+}
+
+.article__text a:hover {
+    color: #16b67f
+}
+
+.article__text blockquote {
+    padding: 27px 0 27px 30px;
+    margin: 27px 0;
+    position: relative;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: Kazimir,'Helvetica CY',Arial,sans-serif;
+    letter-spacing: .5px;
+    font-style: italic;
+    color: #999;
+    border-left: 2px solid #16b67f
+}
+
+.article__text blockquote *,.article__text blockquote p {
+    font-size: 20px;
+    line-height: 26px
+}
+
+.article__text blockquote p:last-child {
+    margin-bottom: 0
+}
+
+.article__text blockquote b,.article__text blockquote strong {
+    font-family: Kazimir-Semibold-Italic,'Helvetica CY',Arial,sans-serif;
+    font-weight: 400
+}
+
+.article__text__subtitle {
+    color: #222;
+    font-family: GraphikCy-Semibold,'Helvetica CY',Arial,sans-serif;
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 20px
+}
+
+.article__text__overview {
+    font-family: Kazimir-Medium,'Helvetica CY',Arial,sans-serif;
+    font-size: 22px;
+    overflow: hidden;
+    line-height: 28px;
+    margin-bottom: 20px
+}
+
+.article__header__title {
+    font-family: GraphikCy-Semibold,'Helvetica CY',Arial,sans-serif;
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #222;
+    font-weight: bold;
+}
+
+.article__text__overview p,.article__text__overview span {
+    font-family: Kazimir-Medium,'Helvetica CY',Arial,sans-serif;
+    font-size: 22px;
+    line-height: 28px
+}
+
+.article__text__overview__no-bold {
+    font-family: Kazimir,'Helvetica CY',Arial,sans-serif
+}
+
+.article__text .twitter-video {
+    max-width: 500px!important
+}
+
+.article__text img {
+    max-width: 100%
+}
+.article__text {
+    font-size: 18px;
+    line-height: 26px;
+    font-family: Kazimir,'Helvetica CY',Arial,sans-serif;
+    overflow: hidden;
+    color: #333;
+}
+.main-link{
+    text-align: right;
+    margin: 0px 0 20px;
+}
+
+.main-link a{
+    display: inline-block;
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    font-family: GraphikCy-Semibold,'Helvetica CY',Arial,sans-serif;
+    background: #1b8;
+    padding: 10px 15px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+.main-link a:hover{
+    background: #13a87b;
+}
